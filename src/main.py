@@ -14,6 +14,7 @@ def main():
     # Add a new engine
     new_engine = EngineModel(engine_id="ENG1234", horsepower=300)
     repository.add(new_engine)
+    session.commit()
 
     # Retrieve and print engine details
     engine = repository.get("ENG1234")
@@ -25,6 +26,7 @@ def main():
     # Update engine status
     engine.set_running(True)
     repository.update(engine)
+    session.commit()
 
     # List all engines
     engines = repository.list()
@@ -35,6 +37,7 @@ def main():
 
     # Delete the engine
     repository.delete("ENG1234")
+    session.commit()
     print(f"Deleted Engine: ENG1234")
 
     session.close()
