@@ -1,6 +1,7 @@
 # tests/services/test_car_service.py
 
 import unittest
+from typing import List
 
 from src.domain.engine_model import EngineModel
 from src.repository.base_engine_repository import BaseEngineRepository
@@ -25,7 +26,7 @@ class FakeEngineRepository(BaseEngineRepository):
         if engine_id in self.engines:
             self.engines.pop(engine_id)
 
-    def list(self) -> list[EngineModel]:
+    def list(self) -> List[EngineModel]:
         return list(self.engines.values())
 
 
