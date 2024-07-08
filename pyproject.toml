@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "repository-pattern-demo"
+version = "0.1.0"
+description = ""
+authors = ["Zarif Aziz"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^1.4"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
