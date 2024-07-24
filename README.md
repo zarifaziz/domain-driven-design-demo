@@ -1,6 +1,6 @@
 # Domain Driven Design demo
 
-![Python](python.jpg)
+![Python](images/python.jpg)
 
 This repository demonstrates a clean and scalable architecture for an enterprise-grade software application using Python. The architecture is based on Domain-Driven Design (DDD) and the Repository Pattern, ensuring that the business logic is decoupled from technical concerns, making the system maintainable and adaptable.
 
